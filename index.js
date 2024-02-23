@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended: "true"}));
 app.use(cors());
 app.use("/posts", postRoutes);
 
-app.get("./", (req, res) => res.send("Hello from my memories api"));
+app.get("/", (req, res) => res.send("Hello from my memories api"));
 // const password = "h1RIvc0gP4Z6syF0";
 // const username = encodeURIComponent("mymemories");
 // const password = encodeURIComponent("0NcwCJpLL9f3XCco");
